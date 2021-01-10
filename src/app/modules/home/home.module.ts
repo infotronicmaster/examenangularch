@@ -3,13 +3,19 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomepageComponent } from './pages/homepage/homepage.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { HeaderComponent } from './components/header/header.component';
+import { InstructorComponent } from './components/instructor/instructor.component';
+import { InstructorContainerComponent } from './components/instructor-container/instructor-container.component';
+import { CoursesDestacadosContainerComponent } from './components/courses-destacados-container/courses-destacados-container.component';
 
 
 @NgModule({
-  declarations: [HomepageComponent],
+  declarations: [HomepageComponent, HeaderComponent,InstructorComponent, InstructorContainerComponent,CoursesDestacadosContainerComponent],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SharedModule
   ]
 })
 export class HomeModule { }
