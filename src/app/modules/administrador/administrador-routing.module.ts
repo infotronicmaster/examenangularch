@@ -1,7 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AdministradorModule } from './administrador.module';
+import { AdminpageComponent } from './pages/adminpage/adminpage.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: AdminpageComponent
+  }
+];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
